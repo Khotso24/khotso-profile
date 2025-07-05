@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khotso Seirwang | Personal Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2, h3 {
+      color: #38bdf8;
+    }
+    a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .highlight {
+      color: #facc15;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    .collapsible {
+      background-color: #1e293b;
+      color: #f1f5f9;
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .active, .collapsible:hover {
+      background-color: #334155;
+    }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #1e293b;
+      border-left: 2px solid #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Khotso Seirwang</h1>
+      <p><strong>BSc (Hons) Mobile & Web Technologies (In Progress)</strong></p>
+      <p>Botswana | 📞 +267 75019133 | 📧 <a href="mailto:khotsoseirwang@gmail.com">khotsoseirwang@gmail.com</a></p>
+    </header><section class="section">
+  <h2>👑 About Me</h2>
+  <button class="collapsible">Read More</button>
+  <div class="content">
+    <p>I’m Khotso Seirwang, a tech-forward student blending software development, AI, and trading into a personal empire. I build from grit and grind — coding apps, lifting weights, and leveling up on Deriv. Purpose drives me, and if it's not about growth, I don't want it.</p>
+    <p>My mission is to innovate in spaces where opportunity is scarce. With minimal tools, I aim to build maximum impact. Every project I take on isn’t just about skills — it’s about legacy.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>📚 Education</h2>
+  <p><strong>Botswana Accountancy College (BAC)</strong><br>BSc (Hons) in Mobile and Web Technologies<br><em>Currently seeking re-sponsorship after government funding loss.</em></p>
+</section>
+
+<section class="section">
+  <h2>🛠️ Skills & Interests</h2>
+  <ul>
+    <li>Web & App Development (React Native, HTML, CSS, JS)</li>
+    <li>Forex & Synthetic Trading (Boom, Crash, Volatility)</li>
+    <li>AI Projects (Deriv + ChatGPT-powered bot under development)</li>
+    <li>Terminal Tools (Termux, Replit, VS Code)</li>
+    <li>API Integration (Deriv API, GitHub, Netlify)</li>
+    <li>Fitness & Nutrition (Barbell training, push-ups)</li>
+    <li>Linux CLI, shell scripting & mobile dev automation</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>📈 Trading Profile</h2>
+  <button class="collapsible">Expand Trading Strategy</button>
+  <div class="content">
+    <ul>
+      <li>Platform: Deriv</li>
+      <li>Indices: Boom, Crash, Volatility, Currencies</li>
+      <li>Strategy: 1-min entries with 1-hour macro view</li>
+      <li>Tools: Live chart analysis, TP/SL, signals in progress</li>
+      <li>Plans to automate entries with Python-based AI tools</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🧠 Projects & Hustles</h2>
+  <ul>
+    <li>Custom Trading Assistant AI (coming soon 🔥)</li>
+    <li>Hosted apps via GitHub & Replit</li>
+    <li>React Native mobile UI/UX prototypes</li>
+    <li>Manual data scraping with JS + Termux</li>
+    <li>Ongoing applications for hospitality & fuel station jobs</li>
+    <li>Pitching Debswana for re-sponsorship and attachment</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>🎯 Goals</h2>
+  <ul>
+    <li>Raise <span class="highlight">P31,000</span> by <strong>July 29, 2025</strong> to resume studies</li>
+    <li>Secure jobs earning P2k+ in Tlokweng</li>
+    <li>Get a room near work to go full grind</li>
+    <li>Build my empire through tech, code, and hustle</li>
+    <li>Create an AI-powered business before graduation</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>🔗 Contact Me</h2>
+  <p><strong>Phone:</strong> +267 75019133<br>
+     <strong>Email:</strong> <a href="mailto:khotsoseirwang@gmail.com">khotsoseirwang@gmail.com</a><br>
+     <strong>Location:</strong> Botswana (CAT Timezone)</p>
+</section>
+
+<section class="section">
+  <h2>🔥 Personal Motto</h2>
+  <blockquote>“I started in a dark room fighting my demons — now I’m building an empire of light, code, and clarity.”</blockquote>
+</section>
+
+<footer>
+  &copy; 2025 Khotso Seirwang. All rights reserved.
+</footer>
+
+  </div>  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script></body>
+</html>
