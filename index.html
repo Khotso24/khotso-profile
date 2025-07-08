@@ -2,165 +2,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khotso Seirwang | Personal Profile</title>
+  <title>Khotso Seirwang | Home</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0f172a;
       color: #f1f5f9;
-      line-height: 1.6;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      background-color: #1e293b;
+      padding: 1rem;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
     }
-    h1, h2, h3 {
+    nav ul li a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
       color: #38bdf8;
     }
-    a {
-      color: #0ea5e9;
+    .logo {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #1e293b;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin-top: 1rem;
+    }
+    .cta {
+      margin-top: 2rem;
+    }
+    .cta a {
+      background-color: #0ea5e9;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .highlight {
-      color: #facc15;
+    .cta a:hover {
+      background-color: #0284c7;
     }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
       color: #94a3b8;
       font-size: 0.9rem;
-    }
-    .collapsible {
-      background-color: #1e293b;
-      color: #f1f5f9;
-      cursor: pointer;
-      padding: 10px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1rem;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .active, .collapsible:hover {
-      background-color: #334155;
-    }
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #1e293b;
-      border-left: 2px solid #38bdf8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Khotso Seirwang</h1>
-      <p><strong>BSc (Hons) Mobile & Web Technologies (In Progress)</strong></p>
-      <p>Botswana | 📞 +267 75019133 | 📧 <a href="mailto:khotsoseirwang@gmail.com">khotsoseirwang@gmail.com</a></p>
-    </header><section class="section">
-  <h2>👑 About Me</h2>
-  <button class="collapsible">Read More</button>
-  <div class="content">
-    <p>I’m Khotso Seirwang, a tech-forward student blending software development, AI, and trading into a personal empire. I build from grit and grind — coding apps, lifting weights, and leveling up on Deriv. Purpose drives me, and if it's not about growth, I don't want it.</p>
-    <p>My mission is to innovate in spaces where opportunity is scarce. With minimal tools, I aim to build maximum impact. Every project I take on isn’t just about skills — it’s about legacy.</p>
-  </div>
-</section>
-
-<section class="section">
-  <h2>📚 Education</h2>
-  <p><strong>Botswana Accountancy College (BAC)</strong><br>BSc (Hons) in Mobile and Web Technologies<br><em>Currently seeking re-sponsorship after government funding loss.</em></p>
-</section>
-
-<section class="section">
-  <h2>🛠️ Skills & Interests</h2>
-  <ul>
-    <li>Web & App Development (React Native, HTML, CSS, JS)</li>
-    <li>Forex & Synthetic Trading (Boom, Crash, Volatility)</li>
-    <li>AI Projects (Deriv + ChatGPT-powered bot under development)</li>
-    <li>Terminal Tools (Termux, Replit, VS Code)</li>
-    <li>API Integration (Deriv API, GitHub, Netlify)</li>
-    <li>Fitness & Nutrition (Barbell training, push-ups)</li>
-    <li>Linux CLI, shell scripting & mobile dev automation</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>📈 Trading Profile</h2>
-  <button class="collapsible">Expand Trading Strategy</button>
-  <div class="content">
+  <nav>
     <ul>
-      <li>Platform: Deriv</li>
-      <li>Indices: Boom, Crash, Volatility, Currencies</li>
-      <li>Strategy: 1-min entries with 1-hour macro view</li>
-      <li>Tools: Live chart analysis, TP/SL, signals in progress</li>
-      <li>Plans to automate entries with Python-based AI tools</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="trading.html">Trading</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </div>
-</section>
-
-<section class="section">
-  <h2>🧠 Projects & Hustles</h2>
-  <ul>
-    <li>Custom Trading Assistant AI (coming soon 🔥)</li>
-    <li>Hosted apps via GitHub & Replit</li>
-    <li>React Native mobile UI/UX prototypes</li>
-    <li>Manual data scraping with JS + Termux</li>
-    <li>Ongoing applications for hospitality & fuel station jobs</li>
-    <li>Pitching Debswana for re-sponsorship and attachment</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>🎯 Goals</h2>
-  <ul>
-    <li>Raise <span class="highlight">P31,000</span> by <strong>July 29, 2025</strong> to resume studies</li>
-    <li>Secure jobs earning P2k+ in Tlokweng</li>
-    <li>Get a room near work to go full grind</li>
-    <li>Build my empire through tech, code, and hustle</li>
-    <li>Create an AI-powered business before graduation</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>🔗 Contact Me</h2>
-  <p><strong>Phone:</strong> +267 75019133<br>
-     <strong>Email:</strong> <a href="mailto:khotsoseirwang@gmail.com">khotsoseirwang@gmail.com</a><br>
-     <strong>Location:</strong> Botswana (CAT Timezone)</p>
-</section>
-
-<section class="section">
-  <h2>🔥 Personal Motto</h2>
-  <blockquote>“I started in a dark room fighting my demons — now I’m building an empire of light, code, and clarity.”</blockquote>
-</section>
-
-<footer>
-  &copy; 2025 Khotso Seirwang. All rights reserved.
-</footer>
-
-  </div> <script defer data-domain="khotso24.github.io" src="https://plausible.io/js/script.js"></script>
-  <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-    collapsibles.forEach(button => {
-      button.addEventListener("click", () => {
-        button.classList.toggle("active");
-        const content = button.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    });
-  </script></body>
-</html>
+  </nav>  <div class="logo">
+    <img src="logo.png" alt="Khotso Seirwang Logo">
+  </div>  <main class="hero">
+    <h1>Welcome to Khotso Seirwang's Portfolio</h1>
+    <p>Tech-driven builder and creative mind in mobile, web, AI and trading. Explore my work, projects, and journey.</p>
+    <div class="cta">
+      <a href="projects.html">See My Projects</a>
+    </div>
+  </main>  <footer>
+    &copy; 2025 Khotso Seirwang. All rights reserved.
+  </footer>  <script defer data-domain="khotso24.github.io" src="https://plausible.io/js/script.js"></script></body>
+            </html>
